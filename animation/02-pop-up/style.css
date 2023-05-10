@@ -32,13 +32,23 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform-origin: center;
-  transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+       -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+		  
 }
 .popup-modal p {
   margin-bottom: 24px
@@ -54,10 +64,16 @@ button {
 
 .popup-modal.show {
   opacity: 100%;
-  pointer-events: all;
+  pointer-events: all; 
+    -webkit-transform: translateY(0%);
+     -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+       -o-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .backdrop.show {
   opacity: 30%;
 }
+
 
